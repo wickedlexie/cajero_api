@@ -23,6 +23,12 @@ async def auth_user(user_in: UserIn):
     return  {"Autenticado": True}
 
 
+
+@api.get("/")
+async def home():
+    return {"message": "¡Bienvenido a su cajero de confianza!"}
+
+
 @api.get("/user/balance/{username}")
 async def get_balance(username: str):
 
