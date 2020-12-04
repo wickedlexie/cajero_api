@@ -23,7 +23,7 @@ async def auth_user(user_in: UserIn):
     return  {"Autenticado": True}
 
 
-@api.post("/")
+@api.get("/")
 async def home():
     return {"message": "Bienvenido a su cajero de confianza"}
 
