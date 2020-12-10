@@ -13,8 +13,7 @@ api = FastAPI()
 
 origins = [
     "http://localhost",
-    "http://localhost:8081",
-    "https://cajero-app07.herokuapp.com"
+    "http://localhost:8081"
 ]
 
 api.add_middleware(
